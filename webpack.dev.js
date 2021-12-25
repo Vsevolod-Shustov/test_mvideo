@@ -35,7 +35,14 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader", "postcss-loader"],
+        use: ["style-loader",
+        {
+          loader: 'css-loader',
+          options: {
+            modules: false,
+          }
+        },
+        "postcss-loader"],
       },
       {
         test: /\.s[ac]ss$/i,
@@ -44,7 +51,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 1
+              modules: false,
             }
           },
           "postcss-loader",
