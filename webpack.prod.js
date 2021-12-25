@@ -43,11 +43,21 @@ module.exports = {
         }
       },
       {
-        // https://webpack.js.org/loaders/css-loader/#root
         test: /\.css$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
+      {
+        test: /\.s[ac]ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader'
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          "postcss-loader",
+          'sass-loader'
         ]
       },
       {
