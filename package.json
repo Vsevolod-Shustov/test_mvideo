@@ -1,0 +1,33 @@
+{
+  "name": "webpack-static-html-pages-vs",
+  "version": "0.0.1",
+  "description": "Static website assembled by using webpack v5",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^8.6.0",
+    "ajv": "^8.8.2",
+    "normalize.css": "^8.0.1"
+  },
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "start:dist": "http-server dist --port ${PORT:-8080}",
+    "build": "webpack --config webpack.prod.js",
+    "preview": "npm run build && npm run start:dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.3.0",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.0.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
