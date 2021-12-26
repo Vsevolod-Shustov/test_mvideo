@@ -25,7 +25,8 @@ module.exports = {
   output: {
     filename: '[name].[contenthash].js',
     path: buildPath,
-    clean: true
+    clean: true,
+    assetModuleFilename:'[name][ext]'
   },
 
   // https://webpack.js.org/concepts/loaders/
@@ -44,13 +45,14 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader",
-        {
-          loader: 'css-loader',
-          options: {
-            modules: false,
-          }
-        },
+        use: [
+          "style-loader",
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false,
+            }
+          },
         "postcss-loader"],
       },
       {

@@ -19,6 +19,9 @@ module.exports = {
     port: 8080,
   },
 
+  output: {
+    assetModuleFilename:'[name][ext]'
+  },
   // https://webpack.js.org/concepts/loaders/
   module: {
     rules: [
@@ -35,13 +38,14 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader",
-        {
-          loader: 'css-loader',
-          options: {
-            modules: false,
-          }
-        },
+        use: [
+          "style-loader",
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false,
+            }
+          },
         "postcss-loader"],
       },
       {

@@ -40,7 +40,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "/*! normalize.css v8.0.1 | MIT License
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{box-sizing:border-box}body{background-color:#000;color:#fff;font-weight:400;font-family:sans-serif;margin:0;padding:0}::-moz-placeholder{color:gray}:-ms-input-placeholder{color:gray}::placeholder{color:gray}", "",{"version":3,"sources":["webpack://./src/css/main.scss","webpack://./src/css/_variables.scss"],"names":[],"mappings":"AAEA,EACE,qBAAA,CAGF,KACE,qBCPsB,CDQtB,UCPgB,CDQhB,eAAA,CACA,sBAAA,CACA,QAAA,CACA,SAAA,CAGF,mBACE,UAAA,CADF,uBACE,UAAA,CADF,cACE,UAAA","sourcesContent":["@import '../css/variables';\r\n\r\n* {\r\n  box-sizing:border-box;\r\n}\r\n\r\nbody {\r\n  background-color:$body-background-color;\r\n  color:$body-text-color;\r\n  font-weight: 400;\r\n  font-family: sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n::placeholder {\r\n  color: gray;\r\n}\r\n","$body-background-color: #000000;\n$body-text-color: #ffffff;\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{box-sizing:border-box}body{background-color:#000;color:#fff;font-weight:400;font-family:\"Roboto\",sans-serif;margin:0;padding:0}::-moz-placeholder{color:gray}:-ms-input-placeholder{color:gray}::placeholder{color:gray}", "",{"version":3,"sources":["webpack://./src/css/main.scss","webpack://./src/css/_variables.scss"],"names":[],"mappings":"AAEA,EACE,qBAAA,CAGF,KACE,qBCPsB,CDQtB,UCPgB,CDQhB,eAAA,CACA,+BAAA,CACA,QAAA,CACA,SAAA,CAGF,mBACE,UAAA,CADF,uBACE,UAAA,CADF,cACE,UAAA","sourcesContent":["@import '../css/variables';\r\n\r\n* {\r\n  box-sizing:border-box;\r\n}\r\n\r\nbody {\r\n  background-color:$body-background-color;\r\n  color:$body-text-color;\r\n  font-weight: 400;\r\n  font-family: 'Roboto', sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n::placeholder {\r\n  color: gray;\r\n}\r\n","$body-background-color: #000000;\n$body-text-color: #ffffff;\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -63,7 +63,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "*{box-sizing:border-box}body{backgroun
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body{font-family:sans-serif}h1{position:fixed;top:0;left:0}.font-test-roboto{font-family:\"Roboto\",sans-serif;color:red}", "",{"version":3,"sources":["webpack://./src/page-index/page.scss"],"names":[],"mappings":"AACA,KAAA,sBAAA,CACA,GAAA,cAAA,CAAA,KAAA,CAAA,MAAA,CACA,kBACE,+BAAA,CAAA,SAAA","sourcesContent":["@import '../css/variables';\r\nbody {font-family:sans-serif;}\r\nh1{position:fixed;top:0;left:0;}\r\n.font-test-roboto {\r\n  font-family: 'Roboto', sans-serif; color:red;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content-wrapper{margin:0 auto;max-width:100%}@media screen and (min-width: 1024px){.content-wrapper{width:1500px;margin:85px 20px 0;color:red}}@media screen and (min-width: 768px)and (max-width: 1023px){.content-wrapper{margin:55px 20px 0;color:blue}}@media screen and (max-width: 767px){.content-wrapper{margin:25px 20px 0;color:green}}", "",{"version":3,"sources":["webpack://./src/page-index/page.scss"],"names":[],"mappings":"AAEA,iBACE,aAAA,CACA,cAAA,CAEF,sCACE,iBACE,YAAA,CACA,kBAAA,CACA,SAAA,CAAA,CAIJ,4DACE,iBACE,kBAAA,CACA,UAAA,CAAA,CAIJ,qCACE,iBACE,kBAAA,CACA,WAAA,CAAA","sourcesContent":["@import '../css/variables';\r\n\r\n.content-wrapper {\r\n  margin:0 auto;\r\n  max-width:100%;\r\n}\r\n@media screen and (min-width:1024px){\r\n  .content-wrapper {\r\n    width:1500px;\r\n    margin:85px 20px 0;\r\n    color:red;\r\n  }\r\n}\r\n\r\n@media screen and (min-width:768px) and (max-width:1023px) {\r\n  .content-wrapper {\r\n    margin:55px 20px 0;\r\n    color:blue;\r\n  }\r\n}\r\n\r\n@media screen and (max-width:767px) {\r\n  .content-wrapper {\r\n    margin:25px 20px 0;\r\n    color:green;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -656,6 +656,22 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ 771:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "blender.png";
+
+/***/ }),
+
+/***/ 541:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "blender_m.png";
+
 /***/ })
 
 /******/ 	});
@@ -709,6 +725,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -725,6 +753,26 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -735,6 +783,10 @@ __webpack_require__(365);
 
 __webpack_require__(177);
 
+__webpack_require__(771);
+
+__webpack_require__(541);
+
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOMContentLoaded', 'page-index');
 });
@@ -742,4 +794,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=index.2e19e49150ef524a34f5.js.map
+//# sourceMappingURL=index.7b08c64c33721e9034a4.js.map
